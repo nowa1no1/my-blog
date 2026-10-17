@@ -1,4 +1,20 @@
 baseURL = "https://nowa1no1.github.io/my-blog/"
 languageCode = "zh-cn"
 title = "我的博客"
-theme = "PaperMod"
+theme = "hextra"
+
+# 开启 Hextra 的默认功能
+[params]
+  description = "我的个人博客"
+  [params.search]
+    enable = false  # 设置为 false 来关闭搜索  
+# 配置顶部导航栏
+[menu]
+  [[menu.main]]
+    name = "文章"
+    pageRef = "/posts"
+    weight = 10
+  [[menu.main]]
+    name = "关于"
+    pageRef = "/about"
+    weight = 20
